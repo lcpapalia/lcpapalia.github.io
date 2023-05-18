@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lilly Papalia</title>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.navbar {
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(119, 118, 118);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Projects 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#agelab">Agelab</a>
+        <a href="#rss">Robotics: Science and Systems</a>
+        <a href="#telemetron">Telemetron</a>
+        <a href="#segway">Self Balancing Segway</a>
+        <a href="#2671">Measurement and Instrumentation</a>
+        <a href="#winerack">Wine Rack</a>
+        <a href="#2007">Autonomous Robot</a>
+      </div>
+    </div> 
+    <a href="#contact">Contact</a>
+  </div>
+
+<!-- Header -->
+<!--header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="explosion.jpg" alt="Explosion" width="1600" height="800">
+</header-->
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="me.jpg" class="w3-round w3-image" alt="Lilly" width="600" height="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center"><b><u>About Me</u></b></h1>
+      <p class="w3-large">Hello! My name is Lilly Papalia, and I am an engineer at General Motors. 
+        I have a degree in mechanical engineering from Massachusetts Institute of Technology. At MIT I completed a program called New Engineering Education Transformation (NEET) in the autonomous machines thread. 
+        With NEET, I completed a project based curriculum focused on designing, building, and programming autonomous machines. 
+        Below are some of projects I have worked on!</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Projects Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
+    <h1 class="w3-wide"><b><u>Projects</u></b></h1>
+   
+    <h2 class="w3-wide" id = "revise"> <u> ReVise (Fall 2021) </u> </h2>
+    <p> In 2.009 (The Product Design Process), I worked along side 20 classmates to create ReVise, an integrated vise solution that can hold tightly onto irregular work pieces without damaging them. 
+      ReVise uses granular jamming to mold to the shape of any workpiece. In 2.009, we ideated then prototyped various ideas eventually landing on our final product ReVise. </p>
+    
+      <img src="revise1.PNG" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+      <img src="revise2.PNG" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+
+
+    <video width="500" height="280" controls>
+    <source src="pink_-_revise_HD.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>Here is the final presentation for ReVise. </p>
+      
+
+
+
+    <h2 class="w3-wide" id = "yoyo"> <u> 2.008 Yo-Yo (Fall 2021) </u> </h2>
+    <p> In Design and Manufacturing 2 (2.008), I worked on a team of 6 people to design and manufacture over 50 yo-yos. 
+      I used a CNC mill to machine aluminum molds. Then the majority of the yo-yo design used injection molding as the manufacturing process. 
+      The inner piece of the yo-yo was thermoformed. The yo-yo was held together by press fits and was very durable. </p>
+      <img src="yoyo1.PNG" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+      <img src="yoyo2.PNG" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+      <p>Above are the CAD renderings of the yo-yo design. </p>
+      <!--img src="yoyo3.JPG" class="w3-round w3-margin-bottom" alt="template" style="width:80%"-->
+      <img src="yoyo4.jpg" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+      <img src="yoyo5.jpg" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+      <img src="yoyo6.jpg" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+
+    
+    <h2 class="w3-wide" id = "agelab"> <u> MIT Agelab (Summer & Fall 2021) </u> </h2>
+    <p>Since Summer 2021, I have been working with the MIT Agelab doing mechanical design. The Agelab is studying how people interact with autonomous driving features in cars. Various sensors must be installed in the participants cars to collect data on the drivers. I completed multiple mechanical projects over the summer, and a few are displayed below.</p>
+    
+    <h4> Rider 2.0 Enclosure </h4>
+    <p>One of the main projects over the summer was designing a custom enclosure for the various components installed in the cars. </p>
+    
+    <h5> Part 1: Inner Template</h5>
+    <p>The first design requirement was the size of the enclosure. Since the sensors are installed in volunteers’ vehicles, we want to minimize the space occupied. The inner template organizes and provides a designated location for each electrical component. The enclosure holds two raspberry pis with sensor hats, a buck converter, ethernet switch, USB hub, custom printed circuit board, and two solid state drives. The wiring of these components also provides an extra challenge to configuration. After a few iterations, the inner template was completed and the surrounding box could be designed.</p>
+    <img src="cad_template.png" class="w3-round w3-margin-bottom" alt="cad template" style="width:80%">
+    <img src="template.jpg" class="w3-round w3-margin-bottom" alt="template" style="width:80%">
+
+    <h5> Part 2: Box </h5>
+    <p>Every month the solid state drives inside the enclosure are swapped. Because of this, accessibility to the drives is important to make the swaps as easy as possible. To ensure easy accessibility to all components inside the box, the template is mounted in the middle of the box. This ensures easy access to the top and bottom of the template, as well as helps the cable management.</p>
+    <img src="cad_box.png" class="w3-round w3-margin-bottom" alt="cad box" style="width:80%">
+    <img src="box.jpg" class="w3-round w3-margin-bottom" alt="box" style="width:80%">
+
+
+    <h2 class="w3-wide" id = "rss"> <u> Robotics: Science and Systems (Spring 2021) </u> </h2>
+
+    <p>In Robotics: Science and Systems (RSS), I worked on a team of four to complete six labs relating to autonomous machines. All the code was written in python using ROS. </p>
+      
+    <h4>Final Race and Obstacle Avoidance</h4>
+    <p>Below is a clip from the final challenge. First is the final race. In these three attempts, the car is using a pure pursuit controller to follow a planned path. Next is the obstacle avoidance challenge. The car autonomously navigates the randomly placed barriers, while making it to the end of the course as quickly as possible. A detailed report explaining the techincal approach and experimental evaluation is displayed below.</p>
+
+    <iframe width="500" height="280" src="https://www.youtube.com/embed/5wpIcAEycoY" frameborder="0" allowfullscreen></iframe>
+    </iframe>
+
+    <iframe src="rss_final_challenge1.pdf" width="100%" height="500px">
+    </iframe>
+
+    <h4>Localization</h4>
+    <iframe src="rss_lab5.pdf" width="100%" height="500px">
+    </iframe>
+    <p> Below is a lab report for the localization lab. Monte carlo localization was used to determine where the robot was in space.</p>
+    <h4>Path Planning</h4>
+    <p> Below is a lab report for the path planning lab. An occupancy grid and A* search algorithm was used to plan a path, then a pure pursuit controller was used to follow the path.</p>
+    <iframe src="rss_lab6.pdf" width="100%" height="500px">
+    </iframe>
+
+
+    <h2 class="w3-wide" id = "telemetron"> <u> Telemetron (Spring 2021) </u> </h2>
+    <p> During the Spring 2021 semester I worked with the MIT Media Lab to create Telemetron: a musical instrument designed for space. The Telemetron uses an IMU and produces a sound corresponding to the orientation of the instrument. I worked on the mechanical design of the instrument, taking into consideration numerous constraints including size, electronic component placement, and aesthetic. </p>
+    
+    <p> The Telemetron took part in a zero gravity flight on May 23, 2021, and will hopefully travel to the ISS sometime in 2022. </p>
+    
+        <!--CAD MODEL-->
+        <h4> Step 1: Design in Fusion 360 </h4>
+        <p>Before designing the outer shell of the Telemetron, the inner structure needed to be finalized. The inner structure holds a raspberry pi, imu, and two speakers. The inner rig is displayed in the image below. </p>
+        <img src="inner_rig.png" class="w3-round w3-margin-bottom" alt="inner rig" style="width:80%">
+        
+        <p>After the inner rig was designed, printed, and tested, the outer shell was designed. The shell needed to maintain a sleek outer appearance, while having inner structure to attach to the inner rig. The inside of the shell was designed to hold the inner rig in place, as well as secure the two halves of the shell together in a visually hidden way. Images of the CAD model of the Telemetron are displayed below.  </p>    
+        <!--img src="shell.png" class="w3-round w3-margin-bottom" alt="shell" style="width:80%"-->
+        <img src="total_shell.png" class="w3-round w3-margin-bottom" alt="total shell" style="width:80%"> 
+        <img src="shell_right.png" class="w3-round w3-margin-bottom" alt="shell right" style="width:80%">
+        <!--img src="shell_left.png" class="w3-round w3-margin-bottom" alt="shell left" style="width:80%"-->
+    
+    
+        <!--Prototype-->
+        <h4> Step 2: 3D Print & Assemble</h4>
+        <p>A few iterations were printed and assembled leading to the final telemetron pictured below!</p>
+        <img src="telemetron_assembled.png" class="w3-round w3-margin-bottom" alt="prototype" style="width:80%">
+
+        <!--Prototype-->
+        <h4> Step 3: Zero Gravity Flight </h4>
+        <img src="20210523_Steve-Boxall_PSM_MIT_Research_ZG548_7434.jpeg" class="w3-round w3-margin-bottom" alt="photo coming soon" style="width:80%">
+        <p>Steve Boxall / Zero-G</p>
+    
+    
+    <h2 class="w3-wide" id = "segway"><u>Self Balancing Segway (Fall 2020) </u></h2>
+    <p> I implemented 3 different types of controllers for this robot: PD, PID, and full state feedback. All three were able to achieve long-term stability, but full state feedback control displayed the best performance. Below is a video displaying self balancing, and a fun configuration! </p>
+    <video width="500" height="280" controls>
+    <source src="Papalia_Segway.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+    </video>
+    
+    
+    <h2 class="w3-wide" id = "2671"><u> Measurement and Instrumentation (Fall 2020) </u></h2>
+    <p>For measurement and instrumentation (2.671) each student designs and runs an experiment, then writes a technical paper describing the outcome. I decided to study the impact of temperature on the height of a Diet Coke and mentos explosion. My full report is below!</p>
+    <iframe src="Papalia_Lilly_2671Paper_TwoColumn.pdf" width="100%" height="500px">
+    </iframe>
+
+
+    <h2 class="w3-wide" id = "winerack"><u>Wine Rack (Summer 2020)</u></h2>
+    <p class=""> During the Spring 2020 semester, my manufacturing class went virtual. I was not able to apply the knowledge learned in my classes to physically build something. Luckily, my father is a mechanical engineer, who owns a lot of manufacturing equipment. I decided to take on the task of building a wine rack for my parents! Here is some more details on this project!</p>
+    <div class="w3-row w3-padding-32">
+        
+        <!--CAD MODEL-->
+        <h4> Step 1: CAD Model</h4>
+        <p>The first step was measuring the dimensions of the wine cellar. After knowing the dimensions I could start designing. After searching through pinterest for design inspiration, I landed on two designs. In Solidworks, I was able to combine the two designs into one wine rack, as shown in the CAD model below.</p>
+        <img src="CAD.png" class="w3-round w3-margin-bottom" alt="cad model" style="width:80%">
+
+        <!--Prototype-->
+        <h4> Step 2: Prototype</h4>
+        <p>Next I built a mini prototype of an X (shown on the second shelf in the picture below) to ensure the saw cut designs would fit together correctly. Then I started building!</p>
+        <img src="prototype.jpg" class="w3-round w3-margin-bottom" alt="prototype" style="width:80%">
+
+        <!--Prototype-->
+        <h4> Step 3: Assemble</h4>
+        <p>Next I built one side of the design. The bottom X was removed to store wine crates. Unfortunatly, I had to move before finishing the whole assembly, but will be completing it this winter! Updates coming soon! </p>
+        <img src="finished shelves.jpg" class="w3-round w3-margin-bottom" alt="finsihed" style="width:80%">
+
+
+        <!--robot-->
+        <h2 class="w3-wide" id = "2007"><u>Autonomous Robot (Spring 2020) </u></h2>
+        <h4> </h4>
+        <p>For my design and manufacturing class last Spring, the focus of the class was to design and build an autonomous robot to compete on a game board. Unfortunately, I was not able to build the robot I designed due to the pandemic, but in the first half of the semester I manufactured a prototype robot. </p>
+        <h4> CAD Model</h4>
+        <p>Below is the CAD model of the robot I designed for the competition. The sheet metal on the back of the robot would be used to push items around the game board, and the claw on the front would be used to rotate a wheel. I performed torque calculations to ensure the selected motor has enough torque to rotate the wheel. I also used Solidworks FEA analysis to ensure the sheet metal could withstand the applied force without plastic deformation. </p>
+        <img src="robot1.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%">
+        <img src="robot2.jpg" class="w3-round w3-margin-bottom" alt="robot2" style="width:80%">
+        
+        <h4> Prototype</h4>
+        <p>Before the pandemic, I manufactured a prototype robot pictured below. This robot could navigate the gameboard autonomously utilizing an ultrasonic sensor and line following.</p>
+        <img src="robotpic.jpg" class="w3-round w3-margin-bottom" alt="minime" style="width:80%">
+
+        <!--h2 class="w3-wide" id = "arm"><u>Robot Arm 6 DOFs</u></h2>
+        <p>My most recent project has been a robot arm with degrees of freedom. I assembled the robot arm, and have been testing the controller. Future development includes mounting the arm, and programming the arm to pick up objects using the claw.</p>
+        <img src="arm1.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%">
+        <h4> </h4>
+        <p></p>
+        <img src="arm2.jpg" class="w3-round w3-margin-bottom" alt="robot1" style="width:80%"-->
+      
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact"> 
+    <h1 class="w3-wide"><b><u>Contact</u></b></h1> 
+    <a href="https://www.linkedin.com/in/lillian-papalia-79a504181/" class="w3-bar-item w3-button">LinkedIn</a>
+    <p><b>Email:</b>lpapalia@mit(dot)edu</p>
+
+  
+  
+  </div>
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
